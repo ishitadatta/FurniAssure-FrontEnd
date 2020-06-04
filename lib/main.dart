@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         [
           Container
             (
-            decoration: BoxDecoration(color:Colors.black),
+            decoration: BoxDecoration(color:Colors.white),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -83,8 +83,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
 //EDIT APP NAME HERE
 
-                      Text("P U R P L E",
-                        style: TextStyle(color: Colors.yellow,fontSize: 26.0,fontWeight: FontWeight.bold),
+                      Text("F U R N I A S S U R E",
+                        style: TextStyle(color: Colors.black,fontSize: 26.0,fontWeight: FontWeight.bold),
                       )
                     ],
                   )
@@ -106,7 +106,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
                         child:Column(children: <Widget>[
 
-                          Text('HEAD IN!',style:TextStyle(color: Colors.white)),
+                          Text('HEAD IN!',style:TextStyle(color: Colors.black)),
 
                         ],),color:Colors.yellow , onPressed: () {
                         navfunction(context);
@@ -134,7 +134,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           child:
                           Text("All of your OddJobNeeds!",
                               style:TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 18.0,
                                   fontWeight:FontWeight.bold
                               )
@@ -157,7 +157,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           child:
                           Text("All in OnePlace!",
                               style:TextStyle(
-                                  color: Colors.purpleAccent,
+                                  color: Colors.black,
                                   fontSize: 18.0,
                                   fontWeight:FontWeight.bold
                               )
