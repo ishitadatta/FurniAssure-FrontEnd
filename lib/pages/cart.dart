@@ -12,8 +12,8 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purpleAccent,
-        title: Text('Hired Cart'),
+        backgroundColor: Colors.yellow,
+        title: Text('Item Cart'),
         actions: <Widget>[
           IconButton(
               icon: Icon(
@@ -39,7 +39,7 @@ class _CartState extends State<Cart> {
             Expanded(
               child: MaterialButton(onPressed: (){},
                 child: Text("Check out", style: TextStyle(color: Colors.white),),
-                color: Colors.purple,),
+                color: Colors.black,),
             )
           ],
         ),

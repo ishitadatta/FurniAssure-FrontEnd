@@ -9,40 +9,40 @@ class Jobs extends StatefulWidget {
 class _JobsState extends State<Jobs> {
   var job_list = [
     {
-      "name": "Amit Brothers",
+      "name": "Ikea Couch",
       "picture": "images/Products/couch1.jpg",
-      "old_cost": 200,
-      "new_cost": 600,
+      "old_cost": 2000,
+      "new_cost": 6000,
     },
     {
-      "name": " Ashish ",
+      "name": " Double-Bed  ",
       "picture": "images/Products/bed1.jpg",
-      "old_cost": 200,
-      "new_cost": 600,
+      "old_cost": 2000,
+      "new_cost": 6000,
     },
     {
-      "name": "Md Shah",
+      "name": "Cabinet Collection",
       "picture": "images/Products/cabinet1.jpg",
-      "old_cost": 400,
-      "new_cost": 600,
+      "old_cost": 4000,
+      "new_cost": 6000,
     },
     {
-      "name": "Ramesh ",
+      "name": "Dining Table ",
       "picture": "images/Products/table1.jpg",
-      "old_cost": 600,
-      "new_cost": 1000,
+      "old_cost": 6000,
+      "new_cost": 10000,
     },
     {
-      "name": "Supriya",
+      "name": "Hometown Chair",
       "picture": "images/Products/chair1.jpg",
-      "old_cost": 300,
-      "new_cost": 700,
+      "old_cost": 3000,
+      "new_cost": 7000,
     },
     {
-      "name": "Suresh",
+      "name": "Living Chair Collection",
       "picture": "images/Products/chair2.jpg",
-      "old_cost": 800,
-      "new_cost": 1000,
+      "old_cost": 8000,
+      "new_cost": 10000,
     }
   ];
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'package:furniassure/pages/home.dart';
 
 
 class Begin extends StatelessWidget {
@@ -7,7 +7,7 @@ class Begin extends StatelessWidget {
     return MaterialApp(
       //debugShowCheckedModeBanner=false,
         home:Scaffold(
-            backgroundColor: Colors.purple,
+            backgroundColor: Colors.yellow,
             body:SafeArea(
                 child: Column(
                     mainAxisAlignment:MainAxisAlignment.center,
@@ -29,8 +29,8 @@ class Begin extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
 
                             },
-                                color: Colors.purple[100],
-                                textColor: Colors.purple,
+                                color: Colors.yellow[100],
+                                textColor: Colors.black,
                                 elevation: 0.2,
                                 child: Text("Hire a service")
                             ),

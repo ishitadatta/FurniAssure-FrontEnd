@@ -90,7 +90,7 @@ class Single_cart_job extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(4.0),
-                child: Text(cart_job_location,style: TextStyle(color: Colors.purple)),
+                child: Text(cart_job_location,style: TextStyle(color: Colors.yellow)),
               ),
             ],
           ),
@@ -101,7 +101,7 @@ class Single_cart_job extends StatelessWidget {
               style: TextStyle(
                   fontSize: 17.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.purple),),
+                  color: Colors.yellow),),
           ),
         ],
         ),

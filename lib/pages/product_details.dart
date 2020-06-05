@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:furniassure/homepage.dart';
-
-import 'package:furniassure/homepage.dart';
+import 'package:furniassure/pages/home.dart';
 import 'cart.dart';
 
 class JobDetails extends StatefulWidget {
@@ -28,7 +26,9 @@ class _JobDetailsState extends State<JobDetails> {
       appBar: AppBar(
         backgroundColor: Colors.purpleAccent,
         title: InkWell(
-            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));},
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+            },
             child: Text('OddJobFinder')),
         actions: <Widget>[
           IconButton(
@@ -84,7 +84,7 @@ class _JobDetailsState extends State<JobDetails> {
                         builder: (context){
                           return AlertDialog(
                             title: Text("Size"),
-                            content: Text("Choose the size bracket"),
+                            content: Text("Choose the size"),
                             actions: <Widget>[
                               new MaterialButton(onPressed: (){
                                 Navigator.of(context).pop(context);
@@ -181,20 +181,20 @@ class _JobDetailsState extends State<JobDetails> {
                   {Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));};
 
                 },
-                    color: Colors.purple,
+                    color: Colors.yellow,
                     textColor: Colors.white,
                     elevation: 0.2,
                     child: Text("Buy Now")
                 ),
               ),
 
-              new IconButton(icon: Icon(Icons.add_alert, color: Colors.purple), onPressed: (){}),
-              new IconButton(icon: Icon(Icons.favorite_border, color: Colors.purple), onPressed: (){}),
+              new IconButton(icon: Icon(Icons.add_alert, color: Colors.yellow), onPressed: (){}),
+              new IconButton(icon: Icon(Icons.favorite_border, color: Colors.yellow), onPressed: (){}),
 
             ],
           ),
 
-          Divider(color: Colors.purple),
+          Divider(color: Colors.yellow),
           ListTile(
             title: Text("Product Description"),
             subtitle: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),

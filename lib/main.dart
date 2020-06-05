@@ -1,5 +1,4 @@
-/*import 'dart:async';*/
-
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:furniassure/Begin.dart';
 // import Page 1 of your app here -IMPORTANT
@@ -8,7 +7,7 @@ void main()=>runApp(new MaterialApp
   (
 
 
-  theme:ThemeData(primaryColor:Colors.red,
+  theme:ThemeData(primaryColor:Colors.yellow,
       accentColor:Colors.yellowAccent),
   debugShowCheckedModeBanner: false,
   home: SplashScreen(),
@@ -58,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         [
           Container
             (
-            decoration: BoxDecoration(color:Colors.white),
+            decoration: BoxDecoration(color:Colors.black),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -72,10 +71,10 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>
                     [
-                      CircleAvatar(backgroundColor: Colors.white,
+                      CircleAvatar(backgroundColor: Colors.yellow,
                         radius: 70.0,
                         child: Icon(
-                          Icons.assessment,color:Colors.yellow,size:120,
+                          Icons.assessment,color:Colors.black,size:120,
                         ),
                       ),
                       Padding(padding:EdgeInsets.only(top:10.0),
@@ -83,8 +82,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
 //EDIT APP NAME HERE
 
-                      Text("F U R N I A S S U R E",
-                        style: TextStyle(color: Colors.black,fontSize: 26.0,fontWeight: FontWeight.bold),
+                      Text("FurniAssure",
+                        style: TextStyle(color: Colors.black,fontSize: 26.0,fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                       )
                     ],
                   )
@@ -106,7 +105,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
                         child:Column(children: <Widget>[
 
-                          Text('HEAD IN!',style:TextStyle(color: Colors.black)),
+                          Text('HEAD IN!',style:TextStyle(color: Colors.white)),
 
                         ],),color:Colors.yellow , onPressed: () {
                         navfunction(context);
@@ -119,7 +118,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         child: new  CircularProgressIndicator(
 
                             backgroundColor: Colors.white,
-                            valueColor: new AlwaysStoppedAnimation(Colors.yellow)),
+                            valueColor: new AlwaysStoppedAnimation(Colors.black)),
                       ),
 
                       Padding(padding: EdgeInsets.only(top:20.0),),
@@ -132,7 +131,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         child: const Padding(
                           padding: EdgeInsets.all(8.0),
                           child:
-                          Text("All of your OddJobNeeds!",
+                          Text("All of your Furniture Needs!",
                               style:TextStyle(
                                   color: Colors.black,
                                   fontSize: 18.0,
@@ -155,7 +154,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         child: const Padding(
                           padding: EdgeInsets.all(8.0),
                           child:
-                          Text("All in OnePlace!",
+                          Text("All in One Place!",
                               style:TextStyle(
                                   color: Colors.black,
                                   fontSize: 18.0,
