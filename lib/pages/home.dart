@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:furniassure/pages/cart.dart';
-
 import 'package:furniassure/components/horizontal_listview.dart';
 import 'package:furniassure/components/products.dart';
 

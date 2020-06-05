@@ -35,6 +35,24 @@ class _LoginState extends State<Login> {
     });
   }
 
+  Future handleSignIn() async{
+    preferences = await SharedPreferences.getInstance();
+
+    setState(() {
+      loading = true;
+    });
+
+    GoogleSignIn googleUser = await googleSignIn.signIn();
+    GoogleSignInAuthentication googleSignInAuthentication = await googleUser.authentication;
+
+    Fluttertoast.showToast(msg: "Login was succesful");
+    setState(() {
+      loading = false;
+    });
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return Container();
