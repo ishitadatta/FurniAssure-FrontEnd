@@ -214,7 +214,7 @@ class _JobDetailsState extends State<JobDetails> {
               Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
                 child: Text("Product Brand", style: TextStyle(color: Colors.grey),),),
               Padding(padding: EdgeInsets.all(5.0),
-                child: Text("English,Telugu,Kannada"),)
+                child: Text("Ikea"),)
             ],
           ),
 
