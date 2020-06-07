@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         [
           Container
             (
-            decoration: BoxDecoration(color:Colors.black),
+            decoration: BoxDecoration(color:Colors.white),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -105,20 +105,20 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
                         child:Column(children: <Widget>[
 
-                          Text('HEAD IN!',style:TextStyle(color: Colors.white)),
+                          Text('HEAD IN!',style:TextStyle(color: Colors.black)),
 
                         ],),color:Colors.yellow , onPressed: () {
                         navfunction(context);
                       },),
-//padding betwwen button and circular loader
+//padding between button and circular loader
                       Padding(padding: EdgeInsets.only(top:15.0),),
                       new SizedBox(
                         width:50.0,height:50.0,
 
                         child: new  CircularProgressIndicator(
 
-                            backgroundColor: Colors.white,
-                            valueColor: new AlwaysStoppedAnimation(Colors.black)),
+                            backgroundColor: Colors.black,
+                            valueColor: new AlwaysStoppedAnimation(Colors.yellowAccent)),
                       ),
 
                       Padding(padding: EdgeInsets.only(top:20.0),),

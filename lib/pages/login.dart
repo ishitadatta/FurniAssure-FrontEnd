@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
 
     var jsonResponse = null;
 
-    var response = await http.post("http://127.0.0.1:8000/login", body: data);
+    var response = await http.post("https://taz-cards-against-humanity.herokuapp.com/users", body: data);
 
     if(response.statusCode == 200) {
 

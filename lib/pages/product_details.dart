@@ -24,17 +24,17 @@ class _JobDetailsState extends State<JobDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purpleAccent,
+        backgroundColor: Colors.yellow,
         title: InkWell(
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
             },
-            child: Text('OddJobFinder')),
+            child: Text('FurniAssure')),
         actions: <Widget>[
           IconButton(
               icon: Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {}),
 
@@ -182,14 +182,14 @@ class _JobDetailsState extends State<JobDetails> {
 
                 },
                     color: Colors.yellow,
-                    textColor: Colors.white,
+                    textColor: Colors.black,
                     elevation: 0.2,
                     child: Text("Buy Now")
                 ),
               ),
 
-              new IconButton(icon: Icon(Icons.add_alert, color: Colors.yellow), onPressed: (){}),
-              new IconButton(icon: Icon(Icons.favorite_border, color: Colors.yellow), onPressed: (){}),
+              new IconButton(icon: Icon(Icons.add_alert, color: Colors.black), onPressed: (){}),
+              new IconButton(icon: Icon(Icons.favorite_border, color: Colors.red), onPressed: (){}),
 
             ],
           ),
@@ -357,7 +357,7 @@ class RelatedSingle_job extends StatelessWidget {
                             Expanded(
                               child: Text(job_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),),
                             ),
-                            Text("\$${job_new_cost}", style: TextStyle(color: Colors.purple, fontWeight: FontWeight.bold),)
+                            Text("\$${job_new_cost}", style: TextStyle(color: Colors.brown, fontWeight: FontWeight.bold),)
                           ]
                       )
 

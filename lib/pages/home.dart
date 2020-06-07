@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget image_carousel = Container(
-      color: Colors.red,
+      color: Colors.yellow,
       height: 200.0,
       child: Carousel(
         boxFit: BoxFit.cover,
@@ -35,19 +35,19 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purpleAccent,
-        title: Text('OddJobFinder'),
+        backgroundColor: Colors.yellow,
+        title: Text('FurniAssure'),
         actions: <Widget>[
           IconButton(
               icon: Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {}),
           IconButton(
               icon: Icon(
                 Icons.shopping_cart,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Cart()));
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
               icon: Icon(
                 Icons.arrow_back,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 decoration: BoxDecoration(
-                    color: Colors.red
+                    color: Colors.yellow
                 ),
               ),
 
@@ -88,21 +88,21 @@ class _HomePageState extends State<HomePage> {
                 onTap: (){},
                 child: ListTile(
                   title: Text('HomePage'),
-                  leading: Icon(Icons.home, color: Colors.purple),
+                  leading: Icon(Icons.home, color: Colors.black),
                 ),
               ),
               InkWell(
                 onTap: (){},
                 child: ListTile(
                   title: Text('MyAccount'),
-                  leading: Icon(Icons.person, color: Colors.purple),
+                  leading: Icon(Icons.person, color: Colors.black),
                 ),
               ),
               InkWell(
                 onTap: (){},
                 child: ListTile(
-                  title: Text('Previously Hired'),
-                  leading: Icon(Icons.accessibility, color: Colors.purple),
+                  title: Text('Past purchases'),
+                  leading: Icon(Icons.accessibility, color: Colors.black),
                 ),
               ),
               InkWell(
@@ -110,8 +110,8 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => Cart()));
                 },
                 child: ListTile(
-                  title: Text('Services Hired'),
-                  leading: Icon(Icons.shopping_cart, color: Colors.purple),
+                  title: Text('Cart'),
+                  leading: Icon(Icons.shopping_cart, color: Colors.black),
                 ),
               ),
               InkWell(
